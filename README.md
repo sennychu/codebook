@@ -287,3 +287,10 @@ c. [补充] 拷贝这个object的construct的prototype属性到新生成的objec
         于是补充他又会多说: "tell Rora I need her~"。
 
         这个例子可见"极晚绑定"的好处，有得有失，这种动作多了，你的js成本会很高(就是慢贝),所以谨慎使用。
+
+
+That is not UTF-8, that is percent encoding also known as url encoding.
+
+You can use decodeURIComponent() to convert it back before displaying it
+
+$("#quote1 span").html(decodeURIComponent(text1));
